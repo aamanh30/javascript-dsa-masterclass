@@ -1,0 +1,37 @@
+{
+  "name": "javascript-dsa-masterclass",
+  "version": "1.0.0",
+  "description": "data structures and algorithms for javascript developers",
+  "main": "dist/src/main.js",
+  "scripts": {
+    "build": "rimraf ./dist/** & tsc --project tsconfig.prod.json",
+    "serve": "nodemon",
+    "start": "node ./dist/main",
+    "stryker:run": "npx stryker run",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "aamanh30",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/preset-typescript": "^7.23.3",
+    "@stryker-mutator/core": "^8.0.0",
+    "@stryker-mutator/jest-runner": "^8.0.0",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.6",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2"
+  }
+}
