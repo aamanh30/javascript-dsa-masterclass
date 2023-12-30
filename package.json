@@ -4,10 +4,17 @@
   "description": "data structures and algorithms for javascript developers",
   "main": "dist/src/main.js",
   "scripts": {
-    "test": "jest",
-    "serve": "nodemon",
     "build": "rimraf ./dist/** & tsc --project tsconfig.prod.json",
-    "start": "node ./dist/main"
+    "serve": "nodemon",
+    "start": "node ./dist/main",
+<<<<<<< HEAD
+    "stryker": "npx stryker run",
+=======
+    "stryker:run": "npx stryker run",
+>>>>>>> 9722bff (Updated the scripts)
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "js"
