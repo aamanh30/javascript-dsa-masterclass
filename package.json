@@ -7,7 +7,7 @@
     "build": "rimraf ./dist/** & tsc --project tsconfig.prod.json",
     "serve": "nodemon",
     "start": "node ./dist/main",
-    "stryker:run": "npx stryker run",
+    "stryker": "npx stryker run",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
